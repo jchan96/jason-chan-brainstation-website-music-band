@@ -1,0 +1,117 @@
+
+@mixin margin-bottom-1 {
+    margin-bottom: 5%;
+}
+
+@mixin padding-1 {
+    padding: 4%;
+}
+
+//mobile
+.footer {
+    background-color: black;
+    color: white;
+    @include padding-1();
+}
+
+.footer__title {
+    @include margin-bottom-1 (); 
+}
+
+.footer__img {
+    visibility: hidden;
+}
+    
+.social {
+    @include margin-bottom-1 (); 
+    display: flex; 
+    justify-content: space-between;
+    width: 15%;
+}
+
+.person__title-container {
+    @include margin-bottom-1 (); 
+}
+
+// .person-1__title-container {
+//     @include margin-bottom-1 (); 
+// }
+
+// .person-2__title-container {
+//     @include margin-bottom-1 ();
+// }
+
+.person-1__address-2 {
+    @include margin-bottom-1 ();
+}
+
+.person-2__address-2 {
+    @include margin-bottom-1 ();
+}
+
+.person-2__adress-3 {
+    @include margin-bottom-1 ();
+}
+
+.person-3__address-2 {
+    @include margin-bottom-1 ();
+}
+
+.person-3__adress-3 {
+    @include margin-bottom-1 ();
+}
+
+//tablet
+@include medium {
+    .footer__title-social-bandsite {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include margin-bottom-1();
+    }
+
+    .footer__title-social {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+    }
+    
+    .footer__img {
+        width: 35%;
+        visibility: visible;
+    }
+
+    .persons-container {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+}   
+
+//desktop
+@include large {
+    padding: 0% 10%;
+    .footer__title-social-bandsite {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include margin-bottom-1();
+    }
+
+    .footer__title-social {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+    }
+    
+    .footer__img {
+        width: 25%;
+        visibility: visible;
+    }
+
+    .persons-container {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+}   

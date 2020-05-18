@@ -1,0 +1,45 @@
+//mobile
+.hero {
+  background-image: url("./../assets/Images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 11.44rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  &__title--container {
+    width: 100%;
+  }
+
+  &__title {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+//tablet
+@include medium {
+  .hero {
+    height: 41.88rem;
+    &__title {
+      margin: 0rem 0rem 0rem 1.5rem;
+      font-size: 3.75rem;
+      line-height: 4.25rem;
+    }
+  }
+}
+
+//desktop
+@include large {
+  .hero {
+    height: 41.88rem;
+    &__title {
+      margin: 0rem 0rem 0rem 11.25rem;
+      font-size: 3.75rem;
+      line-height: 4.25rem;
+    }
+  }
+}

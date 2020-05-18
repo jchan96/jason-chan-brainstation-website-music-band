@@ -1,0 +1,152 @@
+
+//mobile
+.shows {
+    padding: 5%;
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+        &__date--title-first, 
+        &__venue--title-first, 
+        &__location--title-first, 
+        &__tickets--title-first {
+            z-index: -1;
+            visibility: hidden;
+            margin: 0rem 0rem 0rem 0rem;
+        }
+    &__date--title {
+        font-size: 1rem;
+        color: #AFAFAF;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    &__date--value {
+        margin: 0rem 0rem 1.5rem 0rem; 
+        font-size: 1rem;
+    }
+    &__venue--title {
+        font-size: 1rem;
+        color: #AFAFAF;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    &__venue--value {
+        margin: 0rem 0rem 1.5rem 0rem; 
+        font-size: 1rem;
+    }
+    &__location--title {
+        font-size: 1rem;
+        color: #AFAFAF;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    &__location--value {
+        margin: 0rem 0rem 2rem 0rem; 
+        font-size: 1rem;
+    }
+}
+//tablet
+@include medium {
+    .shows {
+        &__date--title-first, 
+        &__venue--title-first, 
+        &__location--title-first {
+            // z-index: ;
+            visibility: visible;
+            margin: 0rem 0rem 0rem 0rem;
+        }
+        &__date--title , 
+        &__venue--title, 
+        &__location--title {
+            z-index: -1;
+            visibility: hidden;
+            margin: 0rem 0rem 0rem 0rem;
+        }
+        &__content-container {
+            // width: 775px;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-evenly;
+            // justify-content: flex-end;
+            // flex-wrap: wrap;
+            padding: 5%;
+            // border: 2px solid black;
+        }
+        &__event {
+            text-align: justify;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            border-bottom: 2px solid gray;
+            // border: 2px solid black;
+        }
+        &__event:first-child {
+             border-bottom: none;
+        }
+        .button--container {
+            margin: 0rem 0rem 1.5rem 0rem; 
+            padding: 0rem 0rem 1rem 0rem;
+            border-bottom: none;  
+        }
+    }
+}
+
+
+//desktop
+@include large {
+    .shows {
+        display: flex; 
+        justify-content: flex-end;
+        border: 2px solid black;
+        padding: 0% 5% 0% 0%;
+    //     &__title {
+    //     // border: 2px solid black;
+
+    // }
+    &__event-0 {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0% 25% 0% 0%;
+    }
+        &__date--title-first, 
+        &__venue--title-first, 
+        &__location--title-first, 
+        &__tickets--title-first {
+            // z-index: ;
+            visibility: visible;
+            margin: 0rem 0rem 0rem 0rem;
+
+        }
+        &__date--title , 
+        &__venue--title, 
+        &__location--title {
+            z-index: -1;
+            visibility: hidden;
+            margin: 0rem 0rem 0rem 0rem;
+        }
+        &__title-container {
+            // border: 2px solid black;
+            width: 25vw;
+            margin: 5%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__content-container {
+            width: 75%;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-evenly;
+            // justify-content: flex-end;
+            // flex-wrap: wrap;
+            padding: 5%;
+        }
+        &__event {
+            // text-align: justify;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            // border: 2px solid black;
+        }
+    }
+}

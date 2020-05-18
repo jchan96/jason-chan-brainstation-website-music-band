@@ -1,0 +1,112 @@
+@import '../partials/universal';
+@import '../partials/breakpoints';
+
+//mobile
+.gallery {
+    padding: 2rem 1rem;
+    background-color: #FAFAFA;
+    &__title {
+        font-size: 1.5rem;
+        padding: 0rem 0rem 1.5rem 0rem;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__img--container {
+        width: 100%;
+        margin-bottom: 1rem;
+        filter:grayscale(100%);
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+    &__img {
+            width: 100%;
+        }
+}
+
+
+//tablet
+@include medium {
+    .gallery {
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        } 
+        &__img--container {
+            width: 12rem;
+            height: 6rem;
+            margin: 1.5rem 1.25rem;
+        }
+        &__img--placeholder {
+            width: 13.5rem;
+        }
+        @media only screen and (min-width: 848px) {
+            &__container {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            &__img--container {
+                width: 14rem;
+                height: 7.88rem;
+                margin: 1.5rem;
+            }
+        }
+    }
+}
+
+//desktop 
+
+@include large {
+    .gallery {
+         &__title {
+            padding: 3rem 0rem 4rem 11.25rem;
+        }
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }    
+        &__img--container {
+            width: 14rem;
+            height: 7.88rem;
+            margin: 1.5rem;
+        }
+
+        &__img--placeholder {
+            width: 16rem;
+        }
+        @media only screen and (min-width: 1208px) {
+            &__container {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            &__img--container {
+                width: 21.5rem;
+                height: 12.1rem;
+                margin: 1.5rem;
+            }
+
+            &__img--placeholder {
+                width: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+* {
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'avenir-regular';
+   text-decoration: none;
+}
+
+@mixin margin-bottom-1 {
+    margin-bottom: 5%;
+}
+
+@mixin padding-1 {
+    padding: 4%;
+}
+

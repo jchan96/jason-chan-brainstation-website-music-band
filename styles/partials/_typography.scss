@@ -1,0 +1,56 @@
+//typography
+@mixin h1-hero-header {
+    font-size: 60px; 
+    line-height: 68px;
+}
+
+@mixin h1-header {
+    font-size: 24px;
+    line-height: 32px;
+    @include medium {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    @include large {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+@mixin h2-header {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin h2-sub-header {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin h3-sub-header { 
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin h4-paragraph-and-comments {
+    font-size: 13px; 
+    line-height: 18px;
+    @include medium {
+    font-size: 14px; 
+    line-height: 22px;
+    }
+    @include large {
+    font-size: 14px; 
+    line-height: 22px;
+    }
+}
+
+@mixin h4-lists-and-contact-information {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin h5-labels {
+    font-size: 12px; 
+    line-height: 20px;
+}

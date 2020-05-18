@@ -1,0 +1,15 @@
+.button--container {
+    margin: 0rem 0rem 1.5rem 0rem; 
+    padding: 0rem 0rem 1rem 0rem;
+    border-bottom: 2px solid gray;
+}
+
+.button {
+        width: 18rem; 
+        height: 3rem;
+        background-color: #323232;
+        border: 0px solid transparent;
+        border-radius: 0.5rem;
+        color: white;
+        text-transform: uppercase;
+    }

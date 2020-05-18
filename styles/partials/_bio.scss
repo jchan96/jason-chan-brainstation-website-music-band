@@ -1,0 +1,144 @@
+
+
+.bio {
+    text-align: justify;
+    width: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+    &__title {
+        margin: 2rem 0rem 1.5rem 0rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    &__img-container {
+        width: 100%;
+        height: 100%;
+    }
+    &__img {        
+        width: 100%;
+    }
+    &__sub-title {
+        font-size: 0.88rem;
+        line-height: 1.38rem;
+        margin: 1.5rem 0rem 2rem 0rem;
+    }
+    &__sub-title--name {
+        font-size: 0.88rem;
+        line-height: 1.38rem;
+        margin: 0rem 0rem 2.5rem 0rem;
+    }
+    &__main--title { 
+        font-size: 0.88rem;
+        line-height: 1.38rem;
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+    &__main--paragraph-1 {
+        font-size: 0.81rem;
+        line-height: 1.13rem;
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+    &__main--paragraph-2 {
+        font-size: 0.81rem;
+        line-height: 1.13rem;
+        margin: 0rem 0rem 2.5rem 0rem;
+    }
+}
+
+//tablet
+@include medium {
+    .bio {
+        &__title {
+            margin: 2rem 0rem 1.5rem 0rem;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+        }
+        &__img-container {
+            width: 100%;
+            height: 100%;
+        }   
+        &__img {        
+            width: 100%;
+        }
+        &__sub-title {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 1.5rem 0rem 2rem 0rem;
+        }
+        &__sub-title--name {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 0rem 0rem 2.5rem 0rem;
+        }
+        &__main--title { 
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 0rem 0rem 1.5rem 0rem;
+        }
+        &__main--paragraph-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__main--paragraph-1 {
+            font-size: 1.13rem;
+            line-height: 1.38rem;
+            margin: 0rem 0rem 1.5rem 0rem;
+            padding: 0rem 1.5rem 0rem 0rem;
+        }
+        &__main--paragraph-2 {
+            font-size: 1.13rem;
+            line-height: 1.38rem;
+            margin: 0rem 0rem 2.5rem 0rem;
+        }
+    }
+}
+
+//desktops
+@include large {
+    .bio {
+        padding: 0rem 17rem 0rem 17rem;
+        &__title {
+            margin: 3rem 0rem 3rem 0rem;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            position: relative; 
+            right: 10%;
+        }
+        &__img-container {
+            width: 56rem;
+            height: 28.13rem;
+            margin: 0rem 0rem 3rem 0rem;
+        }   
+        &__img {        
+            width: 100%;
+        }
+        &__sub-title {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 1.5rem 0rem 2rem 0rem;
+        }
+        &__sub-title--name {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 0rem 0rem 2.5rem 0rem;
+        }
+        &__main--title { 
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 0rem 0rem 1.5rem 0rem;
+        }
+        &__main--paragraph-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__main--paragraph-1 {
+            font-size: 1.13rem;
+            line-height: 1.38rem;
+            margin: 0rem 0rem 1.5rem 0rem;
+            padding: 0rem 1.5rem 0rem 0rem;
+        }
+        &__main--paragraph-2 {
+            font-size: 1.13rem;
+            line-height: 1.38rem;
+            margin: 0rem 0rem 2.5rem 0rem;
+        }
+    }
+}
